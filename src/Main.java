@@ -1,15 +1,15 @@
 public class Main {
     public static void main(String[] args) {
 
-       int x =10;
-       int y =1500;
-       int i = y / x;
-       int s = x + y + i;
-        if (y < 1000) {
-            System.out.println(x+y);
+       int startingScore =100;
+       int replenishment =1100;
+       int bonus = replenishment / startingScore;
+       int finalScore = startingScore + replenishment + bonus;
+        if (replenishment < 1000) {
+            System.out.println(startingScore+replenishment);
         } else {
-            System.out.println(i);
-            System.out.println(s);
+            System.out.println(bonus);
+            System.out.println(finalScore);
         }
     }
 }
